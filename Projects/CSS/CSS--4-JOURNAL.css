@@ -1,0 +1,74 @@
+body {
+    background-image: url("green.jpg"); 
+    padding: 0px;    
+    border: 4px solid green;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+
+.firstborder { 
+    border-style: solid;
+    border-width: 4px;
+    border-color: orangered;
+    color: rgba(82, 194, 214, 0.842);
+    background-color: rgb(245, 243, 243);
+    margin-bottom: 10px;
+}
+
+.firstborder .part2 {
+    margin: 3px;  
+    border: 4px solid rgb(235, 146, 86);
+
+}
+
+
+.firstborder h2 {
+    font-family: "Arial", Helvetica, sans-serif;
+    margin:0%
+}
+
+
+
+.secondborder {
+    padding: 10px;    
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgba(41, 6, 170, 0.918);
+    color: rgba(6, 116, 136, 0.842);
+    font-family: serif;
+    background-color: rgb(218, 246, 247);
+    margin-bottom: 10px;
+}
+
+.secondborder p span{
+    padding: 3px;    
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgba(156, 29, 78, 0.918);
+    font-size: 20px;
+   
+}
+
+.secondborder {
+    font-size: 20px;
+}
+.thirdborder {
+    padding: 10px;    
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgba(41, 6, 170, 0.918);
+    color: rgba(6, 116, 136, 0.842);
+    font-family: serif;
+    background-color: rgb(218, 246, 247);
+}
+
+.thirdborder p span{
+    padding: 3px;    
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgba(156, 29, 78, 0.918);
+    font-size: 20px;
+}

@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+
+.header {
+  background-color: #f5f4f4;
+  height: 70px;
+  padding: 20px;
+}
+
+.header img {
+  display: inline-block;
+  margin-right: 17px;
+}
+
+.google-image {
+  float: left;
+  width: 120px;
+}
+
+.menu-icon {
+  float: right;
+  width: 25px;
+  height: auto;
+}
+
+.bell-icon {
+  width: 28px;
+  height: auto;
+  float: right;
+  margin-top: -2px;
+}
+
+.karen-image {
+  border-radius: 50%;
+  width: 45px;
+  float: right;
+  margin-top: -9px;
+}
+
+.search-bar {
+  margin-left: 200px;
+  max-width: 700px;
+  display: flex;
+  margin-top: -100px;
+  margin-left: 20px;
+}
+
+/* * {
+  box-sizing: border-box;
+  border-style: none;
+} */
+
+/* Style the search field */
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 2px;
+  float: left;
+  width: 80%;
+  border-style: outset;
+  width: 900px;
+  border-right: none;
+}
+
+/* Style the submit button */
+
+.search-bar button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #ffffff;
+  color: #2196f3;
+  font-size: 17px;
+  border: 2px;
+  border-style: outset;
+
+  cursor: pointer;
+}
+
+.nav-content p {
+  display: inline-block;
+  padding-top: 30px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.nav-content p a {
+  text-decoration: none;
+  color: gray;
+  border-bottom: 3px solid transparent;
+  padding: 9px 13px;
+}
+/* 
+.nav-content p:hover {
+border-bottom-style: solid blue 10px;
+} */
+.nav-content p a:hover {
+  border-bottom: 3px solid blue;
+  color: blue; 
+}
+
+.nav-content p a.all {
+  border-bottom: 3px solid blue;
+}
+
+p.all,
+p.images,
+p.news,
+p.videos,
+p.more {
+  margin-right: 15px;
+  float: left;
+}
+
+p.settings {
+  float: left;
+  margin-right: 15px;
+  margin-left: 100px;
+}
+
+.body-content {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 160px;
+}
+
+.body-content .seconds {
+  margin-top: 25px;
+  color: rgb(88, 94, 94);
+}
+
+.first-link {
+  margin-top: 20px;
+}
+
+.first-link h3 a {
+  text-decoration: none;
+  color: #2141f3;
+}
+
+.first-link h3 a:hover {
+  text-decoration: underline;
+}
+
+.first-link .link1 a {
+  color: rgb(52, 80, 52);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.first-link .link1 a:hover {
+  text-decoration: underline;
+}
+
+.first-link .date {
+  color: rgb(99, 99, 99);
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.second-link {
+  margin-top: 20px;
+}
+
+.second-link h3 a {
+  text-decoration: none;
+  color: #2141f3;
+}
+
+.second-link h3 a:hover {
+  text-decoration: underline;
+}
+
+.second-link .link2 a {
+  color: rgb(52, 80, 52);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.second-link .link2 a:hover {
+  text-decoration: underline;
+}
+
+.second-link .content {
+  color: rgb(99, 99, 99);
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.second-link .footer-second-link {
+  display: flex;
+}
+
+.second-link .footer-second-link p a {
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 16px;
+  color: #2141f3;
+}
+
+.third-link {
+  margin-top: 20px;
+}
+
+.third-link h3 a {
+  text-decoration: none;
+  color: #2141f3;
+}
+
+.third-link h3 a:hover {
+  text-decoration: underline;
+}
+
+.third-link .link3 a {
+  color: rgb(52, 80, 52);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.third-link .link3 a:hover {
+  text-decoration: underline;
+}
+
+.third-link .date-2018 {
+  color: rgb(99, 99, 99);
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.second-link .footer-second-link p a {
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 16px;
+  color: #2141f3;
+}
+
+.fourth-link {
+  margin-top: 20px;
+}
+
+.fourth-link h3 a {
+  text-decoration: none;
+  color: #2141f3;
+}
+
+.fourth-link h3 a:hover {
+  text-decoration: underline;
+}
+
+.fourth-link .link4 a {
+  color: rgb(52, 80, 52);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.fourth-link .link4 a:hover {
+  text-decoration: underline;
+}
+
+.fourth-link .date-2018 {
+  color: rgb(99, 99, 99);
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+table,
+th,
+td {
+  border: 2px rgb(231, 230, 230);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 4px;
+}
+
+table {
+  margin: 20px;
+  width: 700px;
+  margin-left:-10px;
+  border-style: outset;
+
+}
+
+th,td {
+  border-bottom-style: solid;
+}
+
+th {
+  text-align: left;
+}
+
+
+table th:only-child {
+  color: rgb(161, 155, 155);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+table i {
+  float: right;
+  color: gray;
+}

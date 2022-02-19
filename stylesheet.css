@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Custom Properties */
+:root {
+  /* FONT FAMILY */
+  --font-family-primary: "Roboto", sans-serif;
+
+  /* FONT WEIGHT */
+  --font-weight-regular: 300;
+  --font-weight-bold: 900;
+
+  /* FONT COLOR */
+  --color-light: #ffff;
+  --color-text-primary-dark: #303030;
+  --color-text-secondary-dark: #14213d;
+  --color-accent-yellow: #fca311;
+
+  /* FONT SIZE */
+  --font-size-h1: 3rem; /* Computation of rem 3x16=48px; default size 16*/
+  --font-size-h2: 2.25rem; /* 2.25x16= 36px*/
+  --font-size-h3: 1.25rem; /* 1.25x16=20px */
+  --font-size-body: 1rem; /* 1x16=16px */
+  /* pag sa root rem ginagamit na font units*/
+
+  /* BOX SHADOWS */
+  --box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  /* offset-x | offset-y | blur-radius | color */
+}
+
+@media (min-width: 800px) {
+  :root {
+    --font-size-h1: 4.5rem; /* 72px */
+    --font-size-h2: 3.75rem; /* 60px */
+    --font-size-h3: 1.5rem; /* 24px */
+    --font-size-body: 1.125rem; /* 18px */
+  }
+}
+
+/* General styles */
+
+body {
+  background: var(--color-light);
+  color: var(--color-text-primary-dark);
+  margin: 0;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-body);
+  line-height: 1.6;
+}
+
+section {
+  padding: 5em 2em; /* 5x16= 80px(top and bottom) 2emx16=32px(right and left) */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* para sa button to */
+
+:focus {
+  outline: 3px solid var(--color-accent-yellow);
+  outline-offset: 3px;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  background: var(--color-accent-yellow);
+  color: var(--color-text-primary-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--font-weight-bold);
+  transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+h2 {
+  font-size: var(--font-size-h2);
+}
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+/* General css for section title */
+.section__title {
+  margin-bottom: 0.25em; /* .25em x 16 = 4px */
+}
+
+/* Section CSS for intro (I am) */
+.section__title--intro {
+  font-weight: var(--font-weight-regular);
+}
+
+/* Section CSS for intro (KAREN ESCABARTE) */
+.section__title--intro strong {
+  display: block;
+}
+
+/* General Css for section subtitle (p) */
+.section__subtitle {
+  margin: 0;
+  font-size: var(--font-size-h3);
+}
+
+/* Section CSS for intro and about  (text with yellow bg)*/
+.section__subtitle--intro,
+.section__subtitle--about {
+  background: var(--color-accent-yellow);
+  font-family: var(--font-family-primary);
+  margin-bottom: 1em; /* 16px */
+  padding: 0.25em 1em; /* .25x16=4px ,16px */
+}
+
+/* header */
+nav {
+  display: none;
+}
+
+/* INTRO SECTION */
+
+.intro {
+  position: relative; /* kaya relative para magstay talaga dun, hindi nakalutang lang(absolute)*/
+  /* border: 5px solid red; */
+}
+/* AAYUSIN KO PA TO */
+q {
+  text-align: center;
+  margin-top: 1.25em;
+}
+
+.intro__img {
+  box-shadow: var(--box-shadow);
+}
+.section__subtitle--intro {
+  display: inline-block;
+  /* kaya inline block para yung width ng may bg yellow ay sakto lang */
+}
+
+@media (min-width: 600px) {
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto; /* top and bottom magiging center to */
+    grid-column-gap: 1em;
+    grid-template-areas: "img title" "img subtitle";
+    grid-template-columns: min-content max-content;
+  }
+
+  .intro__img {
+    grid-area: img;
+    min-width: 210px; /* ito yung size ni karen img */
+    position: relative; /* kaya relative para magstay talaga sa position na yun */
+    z-index: 2;
+    /* z index 2 para nakapatong ung image sa yellow bg, pag negative nasa back sya */
+  }
+
+  .section__subtitle--intro {
+    align-self: start;
+    grid-column: -1/1; /* para to sa yellow bg */
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -1.5em;
+    width: calc(100% + 1.5em);
+  }
+}
+
+/* SERVICES SECTION */
+
+.my-services {
+  background-color: var(--color-text-primary-dark);
+  background-image: url(./images/bg1.jpeg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: var(--color-light);
+  text-align: center;
+}
+
+.section__title--services {
+  color: var(--color-accent-yellow);
+  position: relative;
+}
+
+.section__title--services::after {
+  content: "";
+  display: block;
+  width: 3em;
+  height: 3px;
+  margin: 0.5em auto 1em; /* top | horizontal | bottom */
+  background: currentColor;
+  opacity: 0.5;
+}
+
+/* div ng tatlong div */
+.services {
+  margin-bottom: 2em;
+}
+
+/* each div */
+
+.service {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .services {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service2,
+  .service3 {
+    margin-left: 2em;
+  }
+}
+
+/* ABOUT ME SECTION */
+
+.about-me {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-me__img {
+  box-shadow: var(--box-shadow);
+}
+.about-me__img:hover {
+  transform: scale(1.3);
+  opacity: 1;
+}
+
+.section__title--about,
+.section__subtitle--about {
+  grid-column: 1;
+}
+
+@media (min-width: 600px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 200px; /* size ng two columns */
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
+    grid-column-gap: 2em;
+  }
+
+  .section__title-about {
+    grid-area: title;
+  }
+
+  .section__subtitle--about {
+    grid-column: 1/-1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(200px + 4em);
+  }
+
+  .about-me__img {
+    grid-area: img;
+    width: 1000px;
+    height: 400px;
+    position: relative;
+    z-index: 2;
+    
+  }
+}
+
+/* My Projects */
+
+.my-projects {
+  background-color: var(--color-text-primary-dark);
+  color: var(--color-light);
+  text-align: center;
+}
+
+.section__title--projects {
+  color: var(--color-accent-yellow);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project__item {
+  /* background-color: var(--color-accent-yellow);
+  overflow: hidden; */
+  margin: 1.5em;
+} 
+
+
+.project__img {
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+   width:270px;
+   height: 250px;
+ 
+  
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  object-fit: cover; 
+  
+}
+
+.project__img:hover {
+  transform: scale(1.2);
+  opacity: 0.75;
+}
+
+
+/* BLOGS SECTION */
+
+.section__title--blogs {
+    color: var(--color-text-primary-dark);
+    text-align: center;
+
+}
+
+
+/* FOOTER SECTION */
+
+#contact {
+    background-color: var(--color-text-primary-dark);
+    padding: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer__link {
+  color: #fca311;
+
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FACEBOOK</title>
+
+    <style>
+      * {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+
+      }
+
+      header {
+        background-color: #3b5998;
+        height: 50px;
+        padding: 1.5em;
+   
+      }
+      .fb-logo {
+        color: white;
+        font-size: 2.5em;
+        position: absolute;
+      }
+
+      .email,
+      .password {
+        color: white;
+        float: right;
+        margin-right: 1.5em;
+        
+      }
+
+      #forgot {
+        color: #8b9dc3;
+        display: block;
+        padding-top: 0.5em;
+      }
+
+     #login{
+        color: white;
+        background-color: #8b9dc3;
+        margin-right: 120px;
+      }
+
+
+
+      .left-content {
+        float: left;
+        position: relative;
+        width: 800px;
+        padding: 5.5em 3.5em;
+        background-color:#EDF1F4;
+      }
+      .title {
+        word-wrap: break-word;
+        font-size: 2.25em;
+      }
+
+      p {
+        padding: 2.5em;
+        padding-top: 4.5em;
+      }
+
+      .form {
+        background-color:#EDF1F4;
+      }
+      .title-form {
+        font-size: 50px;
+        padding: .5em;
+      }
+      .subtitle-form {
+        font-size: 20px;
+        padding: .10em;
+        padding-bottom: 1.5em;
+      }
+
+
+      img {
+          float: left;
+          padding-right: 1.5em;
+      }
+
+#firstname {
+    padding: .5em;
+    width: 200px;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+
+}
+
+#lastname {
+    padding: .5em;
+    width: 200px;
+}
+
+#email-number {
+    padding: .5em;
+    width: 440px;
+    margin-bottom: 1.5em;
+}
+
+
+#password-form {
+    padding: .5em;
+    width: 440px;
+    margin-bottom: 1.5em;
+}
+
+#date-label {
+    color: #3b5998;
+
+}
+
+.note {
+    padding: 1.5em;
+}
+
+span {
+      color: #3b5998;
+}
+
+#female {
+    padding-right: 1.5em;
+}
+
+#sign-up  {
+        padding: .25em 3.5em;
+        color: white;
+        background-color: #46a753;
+        margin-right: 120px;
+        font-weight: bold;
+        font-size: 1.25em;
+        border-radius: 5px;
+        margin-bottom: 150px;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="fb-logo">facebook</h1>
+
+      <div class="password">
+        <label for="password" id="password">Password </label> <br />
+
+        <input type="password" id="password" />
+
+        <input type="submit" value="Log In"  id="login"/>
+        <label for="password" id="forgot">Forgot account? </label>
+      </div>
+
+
+      <div class="email">
+        <label for="email" id="email">Email or Phone</label> <br />
+        <input type="text" id="email" />
+      </div>
+
+      <br />
+    </header>
+
+    
+      <div class="left-content">
+        <h1 class="title">
+          Connect with friends and the world around you on Facebook.
+        </h1>
+
+
+        <div class="subtitle"> 
+            <img src="/Projects/HMTL/images/logo-1.jpg" alt="" />
+          <p>
+            <strong> See photos and updates </strong> from friends in News feed.
+          </p>
+         
+            <img src="/Projects/HMTL/images/logo-2.jpg" alt="" />
+          <p>
+            <strong> Share what's new </strong>in your life on your timeline.
+          </p>
+           <img src="/Projects/HMTL/images/logo-3.jpg" alt="" />
+          <p>
+            <strong>Find more </strong> of what you're looking for with Facebook
+            Search.
+          </p>
+        </div>
+
+
+     </div>
+
+      <div class="form">
+        <h1 class="title-form">Sign Up</h1>
+            <p class="subtitle-form">
+                It's free and always be.
+            </p>
+
+                <input type="text" value="First Name" id="firstname">
+                <input type="text" value="Last Name" id="lastname">
+                <input type="text" value="Mobile Number or Email" id="email-number">
+                <input type="text" value="New Password" id="password-form">
+        <h1 class="birthday">Birthday</h1>
+        <input type="date" id="date">
+        <label for="date" id="date-label">Why do I need to provide my birthday?</label>
+            <br>
+            <br>
+        <input type="radio" id="female">
+        <label for="female" id="female">Female</label>
+        <input type="radio" id="male">
+        <label for="male">Male</label>
+            <br>
+            
+        <p class="note">By clicking Sign up, you agree to our <span>Terms, Data Policy</span> and <span>Cookies Policy</span>. You may receive SMS notifications from us and can opt out any time 
+        </p>   
+
+        <input type="submit" value="Sign Up" id="sign-up">
+      </div>
+</div>
+  </body>
+</html>

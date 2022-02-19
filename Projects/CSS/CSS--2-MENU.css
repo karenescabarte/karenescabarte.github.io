@@ -1,0 +1,71 @@
+/* 
+.dots {
+    display: flex;
+    
+}
+
+.dots::after {
+        white-space: nowrap;
+        overflow: hidden;
+        content: "............................................";
+
+}  */
+
+/* 
+h1 {
+  border-style: solid; 
+  border-width: 9px;
+  border-top-color:  rgb(102, 52, 33);
+  border-bottom: transparent;
+}
+
+div {
+  border-style: inset;
+  border-width: 7px;
+  border-color: coral;  
+} */
+ 
+
+/* th {
+  border-style: solid;
+  border-width: 9px;
+  border-color:  rgb(102, 52, 33);
+  border-right: transparent;
+  border-left: transparent;
+} */
+/* 
+td {
+  font-style: italic;
+}  */
+
+/* .parent {
+  display: flex;
+} */
+
+
+
+/* 
+div{
+  height:1em;
+  overflow: hidden;
+}
+.left,.right{
+  padding:1px 0.5em;
+  background:#fff;
+  float:right;
+}
+.left{
+  float:left;
+  clear:both;
+}
+.dotted{
+  border-bottom: 5px dotted grey;
+  margin-bottom:2px; */
+
+
+.container {
+  width: 90%;
+  align-self: center;
+  border-left: 10px solid black;
+}
+

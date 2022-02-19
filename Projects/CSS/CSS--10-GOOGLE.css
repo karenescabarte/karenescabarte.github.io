@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.header p {
+  display: inline;
+  margin: 0;
+  color: black;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 24px;
+}
+
+.header p a {
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+}
+
+.header p a:visited,
+a:hover {
+  color: inherit;
+  text-decoration: underline black;
+}
+
+.header p a:hover {
+  text-decoration: underline black;
+}
+
+p.about a {
+  float: left;
+}
+
+p.store a {
+  float: left;
+}
+
+p.gmail a {
+  float: right;
+}
+
+p.images a {
+  float: right;
+}
+
+.menu-icon img{
+    float: right;
+    margin-top: 20px;
+    width: 25px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 10px;
+    display: flex;
+}
+
+
+.bell-icon img{
+    width: 35px;
+    padding-top: 12px;
+    height: auto;
+    margin-right: 15px;
+    margin-left: 1400px;
+    display: block;
+
+}
+
+
+.image img {
+    margin-top: 20px;
+  border-radius: 50%;
+  width: 50px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  display: flex;
+  margin-left: 70px;
+  display: flex;
+}
+
+.google-logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  width: 320px;
+}
+
+input[type="text"],
+select {
+  width: 46%;
+  padding: 13px 15px;
+  box-sizing: content-box;
+  color: rgb(0, 0, 0);
+  font-size: medium;
+  margin-left: 25%;
+  margin-top: 15px;
+  position: relative;
+  filter: drop-shadow(0 0 0.75rem rgb(190, 190, 190));
+}
+
+.search-box {
+  display: flex;
+  border: 10px;
+}
+
+.search-box1 {
+  display: flex;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin-left: 40%;
+}
+
+.search-box1 p {
+  padding: 10px;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(238, 237, 237);
+}
+
+.footer-content {
+    background: rgb(236, 236, 236);
+    padding:20px;
+    padding-bottom: 40px;
+    margin-top: 190px;
+
+}
+.footer-content p {
+  display: inline;
+  color: black;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+
+}
+
+.footer-content p a {
+  text-decoration: none;
+  padding-left: 25px;
+
+}
+
+.footer-content p a:visited,
+a:hover {
+  color: inherit;
+  text-decoration: underline black;
+}
+
+.footer-content p a:hover {
+  text-decoration: underline black;
+}
+
+p.advertising a {
+  float: left;
+}
+
+p.business a {
+  float: left;
+}
+
+p.privacy a {
+  float: right;
+}
+
+p.terms a {
+  float: right;
+}
+
+p.settings a {
+  float: right;
+}

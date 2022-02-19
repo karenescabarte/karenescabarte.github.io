@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(219, 219, 219);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.head {
+    text-align: center;
+}
+
+.body {
+    background-color: white;
+    padding:20px;
+}
+
+.body img {
+    width: 53%;
+    margin-left: 25%;
+    margin-right: 20%;
+}
+
+.body p {
+    font-size: small;
+    margin-left: 25%;
+    margin-right: 20%;
+    
+}
+
+.section {
+    font-size: small;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.section h3 {
+    text-align: center;
+}
+
+.main .footer {
+    text-align: center;
+ 
+}
+
+/* display: flex;
+    align-items: center;
+    justify-content: center; */

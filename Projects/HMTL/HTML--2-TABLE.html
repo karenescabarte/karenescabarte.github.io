@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TABLE</title>
+
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      th {
+        background-color: rgb(223, 182, 233);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>TABLE using HTML</h1>
+    <p>
+      This activity focus in the creation of table using tr and td. I also use
+      the diffrent input types such as radio,checkbox, datalist togther with the
+      submit button
+    </p>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Value</th>
+      </tr>
+
+      <tr>
+        <td>Name</td>
+        <td>
+          <input type="text" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>Sex</td>
+        <td>
+          <input type="radio" name="Male" /> <label for="Male">Male</label>
+          <br />
+          <input type="radio" name="Female" />
+          <label for="Female">Female</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Eye Color</td>
+        <td>
+          <input type="text" list="eye-colors" />
+          <datalist id="eye-colors">
+            <option value="Green"></option>
+            <option value="Blue"></option>
+          </datalist>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Check all that apply</td>
+
+        <td>
+          <input type="checkbox" id="height" />
+          <label for="height">Over 6 feet tall</label>
+          <br />
+          <input type="checkbox" id="weight" />
+          <label for="weight">Over 200 punds</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          Describe your athletic ability: <br />
+          <textarea id="" cols="34" rows="5"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Enter my Information" id="submit" />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
